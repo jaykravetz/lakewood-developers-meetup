@@ -1,6 +1,12 @@
 <?php
 
-include 'classes/Person.php';
+// include 'classes/Person.php';
+/*
+spl_autoload_register(function($class) {
+    include  __DIR__ . '\classes\\' . $class . '.php';
+});
+*/
+include 'vendor/autoload.php';
 
 $person = new Person('Jay', 'Kravetz');
 
